@@ -14,6 +14,7 @@ export const selectSortedPizza = (state, sorting) => {
                 if (nameA < nameB) {
                     return -1
                 }
+                return 0
             })
             return pizzaSortedByAlphabet
         case 'price':
@@ -22,5 +23,7 @@ export const selectSortedPizza = (state, sorting) => {
                 return a.price - b.price
             })
             return pizzaSortedByPrice
+        default:
+            return state
     }
 }

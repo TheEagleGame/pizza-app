@@ -5,7 +5,6 @@ import {connect} from "react-redux";
 
 
 const HeaderButton = ({basket}) => {
-    console.log(basket)
     return (
         <div className='header_button'>
             <NavLink to='/order'>

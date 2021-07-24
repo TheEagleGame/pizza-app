@@ -1,5 +1,4 @@
 import React, {useEffect, useReducer, useRef, useState} from "react";
-import {ReactComponent as SortArrow} from "../../../assets/sort_arrow_icon.svg";
 import '../../../styles/item_page_sorting.scss'
 
 function useClickOutside(ref, handler) {
@@ -21,7 +20,7 @@ function useClickOutside(ref, handler) {
     )
 }
 
-export const ItemPageSorting = ({sorting,setSorting}) => {
+export const ItemPageSorting = ({setSorting}) => {
 
     const [isVisible, switchIsVisible] = useState(false)
 
@@ -71,13 +70,6 @@ export const ItemPageSorting = ({sorting,setSorting}) => {
                     key={index}
                 >
                     <span onClick={() => toSort(item)}>{item}</span>
-                    {/*{item === state.kindOfSort
-                    && <SortArrow onClick={() => {
-                        sortReverse()
-                        switchIsVisible(!isVisible)
-                    }}
-                    />
-                    }*/}
                 </li>
             )}
 
