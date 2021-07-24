@@ -32,7 +32,6 @@ export const ItemPageSorting = ({setSorting}) => {
     const [state, dispatch] = useReducer( sortReducer, {kindOfSort: sortTypes[0]} )
 
     function sortReducer(state, action) {
-        debugger
         switch (action.type) {
             case sortTypes[0]:
                 return {kindOfSort: 'алфавиту'}
@@ -44,7 +43,6 @@ export const ItemPageSorting = ({setSorting}) => {
     }
 
     const toSort = (type) => {
-        debugger
         dispatch( {type} )
         switchIsVisible(!isVisible)
         if (type === sortTypes[0]) {

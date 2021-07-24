@@ -43,7 +43,6 @@ export const orderReducer = (state = initialState, action) => {
         case CHANGE_ITEMS_COUNT:
             const index = state.basket.order.findIndex(
                 item => JSON.stringify(item, ['id', 'crust', 'size']) === JSON.stringify(action.payload, ['id', 'crust', 'size']))
-            /*const index = state.basket.order.findIndex(item => item.id === action.payload.id)*/
             let orderCopy = state.basket.order.map(item => Object.assign({}, item));
             orderCopy[index].count = action.payload.count
             return {

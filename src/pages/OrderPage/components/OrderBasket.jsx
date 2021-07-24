@@ -32,7 +32,6 @@ const OrderBasket = (props) => {
                 </div>
             </div>
             {basket.order.map(item => {
-                debugger
                 return (
                     <OrderCard key={item.id}
                                id={item.id}

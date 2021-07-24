@@ -1,7 +1,6 @@
 
 
 export const selectSortedPizza = (state, sorting) => {
-    debugger
     switch (sorting) {
         case 'a-z':
             let pizzaSortedByAlphabet = state.item.pizza.map(item => Object.assign({}, item))
