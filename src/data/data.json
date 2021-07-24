@@ -1,0 +1,185 @@
+{
+  "pizza": [
+    {
+      "title": "Маргарита",
+      "imgUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/2ffc31bb-132c-4c99-b894-53f7107a1441.jpg",
+      "sizes": [
+        {
+          "available": true,
+          "size": "26"
+        },
+        {
+          "available": true,
+          "size": "28"
+        },
+        {
+          "available": true,
+          "size": "30"
+        }
+      ],
+      "crust": [
+        {
+          "type": "тонкая",
+          "available": true
+        },
+        {
+          "type": "толстая",
+          "available": true
+        }
+      ],
+      "price": "330",
+      "id": "1"
+    },
+    {
+      "title": "Сырная",
+      "imgUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/30367198-f3bd-44ed-9314-6f717960da07.jpg",
+      "sizes": [
+        {
+          "available": true,
+          "size": "26"
+        },
+        {
+          "available": true,
+          "size": "28"
+        },
+        {
+          "available": false,
+          "size": "30"
+        }
+      ],
+      "crust": [
+        {
+          "type": "тонкая",
+          "available": true
+        },
+        {
+          "type": "толстая",
+          "available": true
+        }
+      ],
+      "price": "400",
+      "id": "2"
+    },
+    {
+      "title": "Овощи и грибы",
+      "imgUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/30367198-f3bd-44ed-9314-6f717960da07.jpg",
+      "sizes": [
+        {
+          "available": true,
+          "size": "26"
+        },
+        {
+          "available": true,
+          "size": "28"
+        },
+        {
+          "available": true,
+          "size": "30"
+        }
+      ],
+      "crust": [
+        {
+          "type": "тонкая",
+          "available": true
+        },
+        {
+          "type": "толстая",
+          "available": true
+        }
+      ],
+      "price": "420",
+      "id": "3"
+    },
+    {
+      "title": "Четыре сезона",
+      "imgUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
+      "sizes": [
+        {
+          "available": true,
+          "size": "26"
+        },
+        {
+          "available": true,
+          "size": "28"
+        },
+        {
+          "available": false,
+          "size": "30"
+        }
+      ],
+      "crust": [
+        {
+          "type": "тонкая",
+          "available": true
+        },
+        {
+          "type": "толстая",
+          "available": true
+        }
+      ],
+      "price": "450",
+      "id": "4"
+    },
+    {
+      "title": "Крейзи пепперони",
+      "imgUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/1e1a6e80-b3ba-4a44-b6b9-beae5b1fbf27.jpg",
+      "sizes": [
+        {
+          "available": true,
+          "size": "26"
+        },
+        {
+          "available": false,
+          "size": "28"
+        },
+        {
+          "available": false,
+          "size": "30"
+        }
+      ],
+      "crust": [
+        {
+          "type": "тонкая",
+          "available": true
+        },
+        {
+          "type": "толстая",
+          "available": true
+        }
+      ],
+      "price": "370",
+      "id": "5"
+    },
+    {
+      "title": "Маринованный цыпленок в соусе барбекью",
+      "imgUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/6652fec1-04df-49d8-8744-232f1032c44b.jpg",
+      "sizes": [
+        {
+          "available": true,
+          "size": "26"
+        },
+        {
+          "available": true,
+          "size": "28"
+        },
+        {
+          "available": true,
+          "size": "30"
+        }
+      ],
+      "crust": [
+        {
+          "type": "тонкая",
+          "available": true
+        },
+        {
+          "type": "толстая",
+          "available": false
+        }
+      ],
+      "price": "200",
+      "id": "6"
+    }
+  ]
+}
+

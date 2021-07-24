@@ -1,0 +1,166 @@
+
+.pizza-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 25%;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+
+  .pizza-description {
+    border-radius: 20px;
+    text-align: center;
+    background-color: lighten(gray, 45%);
+    padding: 10px;
+  }
+  .pizza-card__title {
+    padding: 10px;
+  }
+}
+
+.pizza-card__icon {
+  display: block;
+
+  img {
+    width: 100%;
+  }
+}
+
+.pizza-description__crust {
+  display: flex;
+  margin-bottom: 10px;
+
+  li {
+    width: 50%;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 30px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+}
+
+.pizza-description__size {
+  display: flex;
+
+  li {
+    width: 33.3%;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 30px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+}
+
+li.is_not_available {
+  color: gray;
+  cursor: default;
+
+  &:hover {
+    transform: none;
+  }
+}
+
+li.is_available {
+  background-color: white;
+  box-shadow: 2px 2px 2px lightgray;
+}
+
+
+.pizza-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 10px 0;
+}
+
+.add-pizza-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid #fe5f1e;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fe5f1e;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    background-color: #fe5f1e;
+    color: white;
+  }
+
+  &:hover .add-button__count {
+    color: #fe5f1e;
+    background-color: white;
+  }
+
+  .add-pizza-button__count {
+    padding: 0 5px;
+    border-radius: 50%;
+    margin-left: 10px;
+    color: white;
+    background-color: #fe5f1e;
+    transition: all 0.2s linear;
+
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .pizza-card {
+    width: 33.3%;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .pizza-card {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 762px) {
+  .pizza-card {
+    width: 100%;
+  }
+  .add-pizza-button {
+    padding: 5px 10px;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .pizza-card {
+    font-size: 11px;
+
+    .pizza-card__title {
+      font-size: 1.5em;
+    }
+
+    .pizza-footer__price {
+      font-size: 1.5em;
+    }
+  }
+  .pizza-description__size {
+    li {
+      padding: 5px 0;
+    }
+  }
+  .pizza-description__crust{
+    li {
+      padding: 5px 0;
+    }
+  }
+}

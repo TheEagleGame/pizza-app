@@ -1,0 +1,53 @@
+.sorting {
+  position: relative;
+  .sorting__trigger {
+    display: flex;
+    align-items: center;
+    span {
+      margin: 0 5px 0 10px;
+      color: orangered;
+      border-bottom: 1px dotted orangered;
+      cursor: pointer;
+      &:hover {
+        color: lighten(gray,30%);
+        border-bottom: 1px dotted lighten(gray,30%);
+      }
+    }
+  }
+
+  ul {
+    position: absolute;
+    z-index: 2;
+    bottom: -200%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px lightgray;
+    color: black;
+    cursor: pointer;
+    background-color: white;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      transition: all 0.2s linear;
+    }
+    li.active {
+      background-color: lighten(gray, 46%);
+      font-weight: bold;
+      color: #fe5f1e;
+    }
+    svg {
+      width: 10px;
+      height: 10px;
+      fill: orangered;
+      cursor: pointer;
+      &:hover {
+        fill: lighten(gray,30%);
+      }
+    }
+  }
+}

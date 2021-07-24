@@ -1,0 +1,159 @@
+.order-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+
+  .pizza-info {
+    display: flex;
+    padding: 0 20px 0 20px;
+
+    img {
+      max-width: 100px;
+      margin-right: 20px;
+    }
+
+    .pizza-description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 20px;
+
+      .pizza-description__type {
+        color: gray;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+.order-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+
+  .pizza-count {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+
+    .pizza-count__changer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background-color: transparent;
+      color: #fe5f1e;
+      border: 2px solid #fe5f1e;
+      cursor: pointer;
+      margin: 0 10px;
+      transition: all 0.2s linear;
+
+      &:hover {
+        background-color: #fe5f1e;
+      }
+
+      svg {
+        transition: all 0.2s linear;
+      }
+
+      &:hover svg {
+        fill: white;
+      }
+    }
+  }
+
+  .order-info__price {
+    font-size: 23px;
+    font-weight: bold;
+  }
+
+  .order-info__remove-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    color: lighten(gray, 15%);
+    border-radius: 50%;
+    border: 1px solid lighten(gray, 15%);
+    cursor: pointer;
+    transition: all 0.2s linear;
+
+    &:hover {
+      background-color: lighten(gray, 15%);
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .order-info {
+    width: 45%;
+  }
+  .pizza_container h2 {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .order-card {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    .pizza-info{
+      width: 100%;
+    }
+  }
+
+  .order-info {
+    padding: 20px 12px;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 762px) {
+  .order-info {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .order-card {
+    padding: 40px 0;
+
+    .pizza-info {
+      padding: 5px 0;
+      width: 100%;
+
+      img {
+        max-width: 75px;
+      }
+
+      .pizza-description {
+        font-size: 14px;
+
+        .pizza-description__type {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  .basket_info {
+    align-items: center;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .order-info {
+    padding: 10px 0;
+    width: 100%;
+
+    .order-info__price {
+      font-size: 14px;
+    }
+  }
+}

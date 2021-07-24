@@ -1,0 +1,56 @@
+.order_count {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+
+  .truck_icon {
+    max-width: 20px;
+    max-height: 20px;
+    margin: 0 5px;
+  }
+}
+
+.header_button {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header_button_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 20px 30px;
+  background-color: orangered;
+  border-radius: 35px;
+
+  span {
+    margin: 0px 5px;
+  }
+}
+
+.price_of_order {
+  margin-right: 10px;
+}
+
+.header_button_delimiter {
+  width: 1px;
+  height: 25px;
+  background-color: hsla(0, 0%, 100%, .25);
+}
+
+@media screen and (max-width: 576px) {
+  .order_count {
+    .truck_icon {
+      max-width: 15px;
+    }
+  }
+  .header_button {
+    font-size: 14px;
+  }
+  .header_button_container {
+    padding: 15px 25px;
+  }
+}

@@ -1,0 +1,129 @@
+
+.order-basket {
+  padding: 30px;
+}
+
+.basket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lighten(gray, 40%);
+  padding: 30px 0px;
+}
+
+.basket-header__title {
+  display: flex;
+  align-items: center;
+
+  h1 {
+    padding: 0;
+    font-size: 35px;
+  }
+
+  .truck_icon {
+    max-width: 35px;
+    max-height: 35px;
+    margin: 15px;
+  }
+}
+
+.basket-header__clear {
+  display: flex;
+  cursor: pointer;
+
+  .trash_icon {
+    fill: lighten(gray, 15%);
+    transition: all 0.2s linear;
+  }
+
+  p {
+    color: lighten(gray, 15%);
+    transition: all 0.2s linear;
+  }
+
+  &:hover .trash_icon {
+    fill: lighten(gray, 25%)
+  }
+
+  &:hover p {
+    color: lighten(gray, 25%)
+  }
+}
+
+.basket-info {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  span {
+    font-weight: bold;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: all 0.2s linear;
+  }
+  a {
+    order: 1;
+  }
+  div {
+    order: 2;
+  }
+}
+
+.button_router {
+  order: 1;
+  background-color: transparent;
+  border: 1px solid lighten(gray, 15%);
+  color: lighten(gray, 15%);
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+    background-color: lighten(black, 10%);
+  }
+}
+
+.button_payment {
+  background-color: #fe5f1e;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken(#fe5f1e, 10%);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .order-basket {
+    padding: 30px 10px;
+  }
+  .basket-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons {
+    align-items: center;
+    flex-direction: column;
+
+    a {
+      order: 3;
+      padding: 10px;
+    }
+  }
+  .basket-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
