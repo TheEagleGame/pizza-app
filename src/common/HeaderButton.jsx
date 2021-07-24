@@ -1,7 +1,7 @@
 import {NavLink} from "react-router-dom";
 import {ReactComponent as Truck} from "./../assets/truck_icon.svg";
-import './../styles/header_button.scss';
 import {connect} from "react-redux";
+import './../styles/header_button.scss';
 
 
 const HeaderButton = ({basket}) => {
